@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="643.0" prefWidth="1076.0" style="-fx-background-color: #4b4b4b;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sistemadetrafico.GrafoController">
+   <children>
+      <AnchorPane prefHeight="643.0" prefWidth="231.0" style="-fx-background-color: #7F7F7F;" />
+      <AnchorPane prefHeight="93.0" prefWidth="1076.0" style="-fx-background-color: #474747;">
+         <children>
+            <MenuButton fx:id="menuButtonAgregar" layoutY="68.0" mnemonicParsing="false" style="-fx-background-color: #474747;" text="Agregar" textFill="WHITE">
+              <items>
+                <MenuItem fx:id="menuItemAgParada" mnemonicParsing="false" text="Parada" />
+                <MenuItem fx:id="menuItemAgRuta" mnemonicParsing="false" text="Ruta" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="menuButtonEliminar" layoutX="75.0" layoutY="68.0" mnemonicParsing="false" style="-fx-background-color: #474747;" text="Eliminar" textFill="WHITE">
+              <items>
+                <MenuItem fx:id="menuItemEliminarParada" mnemonicParsing="false" text="Parada" />
+                <MenuItem fx:id="menuItemEliminarRuta" mnemonicParsing="false" text="Ruta" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="menuButtonModificar" layoutX="150.0" layoutY="68.0" mnemonicParsing="false" style="-fx-background-color: #474747;" text="Modificar" textFill="WHITE">
+              <items>
+                <MenuItem fx:id="menuItemModificarParada" mnemonicParsing="false" text="Parada" />
+                <MenuItem fx:id="menuItemModificarRuta" mnemonicParsing="false" text="Ruta" />
+              </items>
+            </MenuButton>
+            <Label alignment="CENTER" layoutX="300.0" layoutY="15.0" text="Sistema de Gestión de Rutas" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnBuscarRuta" layoutX="520.0" layoutY="66.0" mnemonicParsing="false" style="-fx-background-color: #a9a9a9;" text="Buscar ruta óptima" textFill="WHITE" />
+            <ComboBox fx:id="cmbGestionador" layoutX="262.0" layoutY="66.0" prefHeight="25.0" prefWidth="238.0" promptText="Seleccione una opción de búsqueda" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="paneArea" layoutX="231.0" layoutY="93.0" prefHeight="551.0" prefWidth="849.0" />
+   </children>
+</AnchorPane>
